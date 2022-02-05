@@ -30,3 +30,7 @@ estrutura basica de arquivos html-css:
 <html>
 
 #< > para abrir uma tag, </ > para fechar tag
+
+#para criar um codigo base rapidamente, digitar "!" e aguardar, apos segundos clique Enter
+#da mesma forma podemos por "h1", por exemplo, aguardar e Enter, para criar automaticamente um titulo de nivel 1
+#o mesmo serve para paragrafos "p", "img", etc
