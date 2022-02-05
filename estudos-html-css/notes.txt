@@ -1,0 +1,32 @@
+MINHAS ANOTACOES DOS ESTUDOS DE HTML E CSS!
+
+repositorios publicos - github.com/gustavoguanabara e gustavoguanabara.github.io
+
+html - focado em conteudo - texto, imagem, video, tabela
+css - design, cores, sombras, tamanhos, posicionamento
+js - interacao, menu, popup, validacao
+
+estrutura basica de arquivos html-css:
+
+<!DOCTYPE html> #tipo
+<html lag="pt-br"> #serve para informar a linguagem do conteudo contido na pagina
+
+	<head> #onde sao feita as configuracoes
+		
+		<meta charset="UTF-8"> #tipo de caracteres que aceita cedilha e acentuacao
+		<meta name="viewport"
+		content="width=device-width,
+		initial-scale=1.0"> #para ocupar toda area branca da pagina, tamanho, e escala 100%
+		<title>Document</title>
+
+	</head>
+
+	<body> #onde esta o conteudo
+		
+		<h1>Ola, mundo!</h1>
+
+	</body>
+
+<html>
+
+#< > para abrir uma tag, </ > para fechar tag
