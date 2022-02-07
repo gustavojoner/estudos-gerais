@@ -76,12 +76,9 @@ Favicon:
 Saos os icones que aparecem no titulo do site, abas e em favoritos.
 O arquivo geralmente esta em formato ICO, e podemos encontrar alguns prontos no site: IconArchive, ou desenhar
 em favicon.cc, tambem em favicon.io podemos criar partindo de imagens.
-Normalmente o nome do arquivo sera: favicon.ICO.
+Normalmente o nome do arquivo sera: favicon.ICO, mas pode ser tambem em PNG.
 No download de favicon.io, receberemos um arquivo para descompactar (vem varios tipos de arquivos),
 ja no site temos uma lista de links que podem ser utilizados para ser aceito em diversas plataformas.
 
 Na linha 6 de nosso documento, adicionamos a tag <link>, digitando link e Enter, substituimos os parametros 
 href="nome do arquivo" e rel="shortcut icon", inserimos type="image/x-icon".
-
-
-
