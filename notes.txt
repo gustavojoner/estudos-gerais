@@ -1,10 +1,13 @@
-MINHAS ANOTACOES DOS ESTUDOS DE HTML E CSS!
+MINHAS ANOTACOES DOS ESTUDOS DE HTML, CSS e JAVA!
 
 repositorios publicos - github.com/gustavoguanabara e gustavoguanabara.github.io
 
 html - focado em conteudo - texto, imagem, video, tabela
 css - design, cores, sombras, tamanhos, posicionamento
 js - interacao, menu, popup, validacao
+
+
+AULA 1 e 2 CAPITULO 4
 
 estrutura basica de arquivos html-css:
 
@@ -34,3 +37,51 @@ estrutura basica de arquivos html-css:
 #para criar um codigo base rapidamente, digitar "!" e aguardar, apos segundos clique Enter
 #da mesma forma podemos por "h1", por exemplo, aguardar e Enter, para criar automaticamente um titulo de nivel 1
 #o mesmo serve para paragrafos "p", "img", etc
+
+
+AULA 1 CAPITULO 5
+
+Quebra de linha
+Se precisar quebrar um texto em algum lugar específico <br> como esse você pode usar a tag &lt;br&gt;
+
+Símbolos e códigos - Chamados de HTML Entities
+&reg; marca registrada, &empty; vazio, &sum; soma, &delta; delta
+&copy; copyright, &trade; trade mark, &larr; &uarr; &rarr; &darr; setas
+&euro; euro, &pound; libra, &yen; yen, &cent; cent
+
+Emojis
+Para inserie emojis, podemos consultar o código através do site: emojipedia.org 
+código: U+1F604, substituindo o U+ por &#x (letra x minúscula): &#x1F604 
+
+Comentarios
+Para adicionar um comentario, utilizamos: <!-- COMENTARIO AQUI -->
+
+
+AULA 1 CAPITULO 6
+
+Imagens:
+Para evitar processos por direitos autorais.
+Referencia sites imagens pagas: iStockPhoto, DepositPhotos, ShutterStock.
+Referencia sites imagens livres: UnSplash, Pexels, FreePik, Rawpixel, Pixabay, Libreshot, Wikimedia Commons.
+
+Para adicionar imagens usamos <img>, basta digitar "img" e Enter que atutomaticamente entra o codigo,
+e possivel adicionarmos imagens da mesma pasta, de pastas na pasta e de sites, usando seu URL.
+Os parametros dessa tag sao <src> source = origem, e <alt> texto alternativo.
+Utilizando o comando Ctrl+Space em src = "COMANDO", o editor fara uma listagem dos arquivos possiveis.
+
+Os textos alternativos <alt>, além de ajudar na indexacao em mecanismos de busca tambem ajudam na acessibilidade
+para visitantes deficientes visuais, por isso e importante descrever a imagem.
+
+Favicon:
+Saos os icones que aparecem no titulo do site, abas e em favoritos.
+O arquivo geralmente esta em formato ICO, e podemos encontrar alguns prontos no site: IconArchive, ou desenhar
+em favicon.cc, tambem em favicon.io podemos criar partindo de imagens.
+Normalmente o nome do arquivo sera: favicon.ICO.
+No download de favicon.io, receberemos um arquivo para descompactar (vem varios tipos de arquivos),
+ja no site temos uma lista de links que podem ser utilizados para ser aceito em diversas plataformas.
+
+Na linha 6 de nosso documento, adicionamos a tag <link>, digitando link e Enter, substituimos os parametros 
+href="nome do arquivo" e rel="shortcut icon", inserimos type="image/x-icon".
+
+
+
