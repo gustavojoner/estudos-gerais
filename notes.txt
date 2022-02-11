@@ -82,3 +82,13 @@ ja no site temos uma lista de links que podem ser utilizados para ser aceito em 
 
 Na linha 6 de nosso documento, adicionamos a tag <link>, digitando link e Enter, substituimos os parametros 
 href="nome do arquivo" e rel="shortcut icon", inserimos type="image/x-icon".
+
+
+AULA 1 CAPITULO 7
+
+Hierarquia de titulos:
+Titulos vao de h1 ate h6, nao significa seu tamanho mas sim sua importancia quanto ao assunto, a sua Hierarquia,
+sendo h1 o tema principal.
+Para preencher um paragrafo com texto aleatorio basta digitar "lorem" + Enter.
+
+
