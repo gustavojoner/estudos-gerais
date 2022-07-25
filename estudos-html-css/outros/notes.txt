@@ -7,7 +7,7 @@ css - design, cores, sombras, tamanhos, posicionamento
 js - interacao, menu, popup, validacao
 
 
-AULA 1 e 2 CAPITULO 4
+CAPITULO 4
 
 estrutura basica de arquivos html-css:
 
@@ -39,7 +39,7 @@ estrutura basica de arquivos html-css:
 #o mesmo serve para paragrafos "p", "img", etc
 
 
-AULA 1 CAPITULO 5
+CAPITULO 5
 
 Quebra de linha
 Se precisar quebrar um texto em algum lugar específico <br> como esse você pode usar a tag &lt;br&gt;
@@ -57,7 +57,7 @@ Comentarios
 Para adicionar um comentario, utilizamos: <!-- COMENTARIO AQUI -->
 
 
-AULA 1 CAPITULO 6
+CAPITULO 6
 
 Imagens:
 Para evitar processos por direitos autorais.
@@ -84,19 +84,21 @@ Na linha 6 de nosso documento, adicionamos a tag <link>, digitando link e Enter,
 href="nome do arquivo" e rel="shortcut icon", inserimos type="image/x-icon".
 
 
-AULA 1 CAPITULO 7
+CAPITULO 7
 
 Hierarquia de titulos:
 Titulos vao de h1 ate h6, nao significa seu tamanho mas sim sua importancia quanto ao assunto, a sua Hierarquia,
 sendo h1 o tema principal.
 Para preencher um paragrafo com texto aleatorio basta digitar "lorem" + Enter.
 
-AULA 1 ATE 4 CAPITULO 8
+
+CAPITULO 8
 
 Formatacoes e tags:
 Ver arquivo formatacoes-tags.html na pasta outros.
 
-AULA 1 CAPITULO 9
+
+CAPITULO 9
 
 Listas com HTML:
 Lista ordenada, ordered list <ol> para determinar a lista e <li> list item para identificar o item.
@@ -129,3 +131,35 @@ Lista de definicoes, <dl>, sao listas sem marcadores, dentro dela temos tags <dt
 </dl>
 
 
+CAPITULO 10
+
+Hyperlinks:
+Para a criacao de hyperlinks devemos utilizar ancoras, <a>, tendo o principal atributo href, onde utilizamos a URL, e hreflang que serve para inserir a lingua da pagina destino, Exemplo:
+
+<a href="https://google.com">Link do Google</a> 
+<a href="https://terra.com.br" hreflang="pt-br">Site Terra</a>
+
+Para ter controle da forma do hyperlink abrir, utilizamos o atributo target com os valores:
+_blank	 -> abre em nova janela em branco
+_self	 -> abre na frame atual (padrao)
+_top	 -> desfazer todos frames e abrir o destino no navegador completo
+_parent  -> similar a top, em referencia a janela mae
+nome-do-frame caso esteja utilizando frames, indicar nome da janela a abrir
+
+<a href="pagina2.html" target="_self">Continuar navegando pelo site</a>
+<a href="pagina3.html" target="_blank">Continuar em nova janela</a>
+
+O atributo rel indica se:
+next	 -> link é para proxima parte do documento atual
+prev 	 -> link é para parte anterior do documento atual
+author	 -> link é para site do autor
+external -> link que nao pertence ao site atual
+nofollow -> link para site nao endosado, pago
+
+<a href="pagina2.html" target="_self" rel="next">Continuar no site</a>
+<a href="https://google.com" target="_blank" rel="external">Pagina externa</a>
+
+Atributo para downnloads usado e download, e alguns de seus tipos sao:
+application/zip, text/html, text/css, text/javascript, video/mp4, video/H264, video/JPEG, audio/aac, audio/mpeg, font/ttf, image/jpeg, image/png, etc.
+
+<a href="arquivo/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro</a>
