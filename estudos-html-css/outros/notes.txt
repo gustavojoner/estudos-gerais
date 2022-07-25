@@ -1,4 +1,4 @@
-MINHAS ANOTACOES DOS ESTUDOS DE HTML, CSS e JAVA!
+MINHAS ANOTACOES DOS ESTUDOS DE HTML e CSS!
 
 repositorios publicos - github.com/gustavoguanabara e gustavoguanabara.github.io
 
@@ -90,5 +90,42 @@ Hierarquia de titulos:
 Titulos vao de h1 ate h6, nao significa seu tamanho mas sim sua importancia quanto ao assunto, a sua Hierarquia,
 sendo h1 o tema principal.
 Para preencher um paragrafo com texto aleatorio basta digitar "lorem" + Enter.
+
+AULA 1 ATE 4 CAPITULO 8
+
+Formatacoes e tags:
+Ver arquivo formatacoes-tags.html na pasta outros.
+
+AULA 1 CAPITULO 9
+
+Listas com HTML:
+Lista ordenada, ordered list <ol> para determinar a lista e <li> list item para identificar o item.
+A tag <ol> possui um parametro type e tambem start:
+1 - numerico, A - alfabetico maiusculo, a - alfabetico minusculo, I - romano minusculo, i - romano maiusculo.
+Exemplo: <ol type= "I", start= "5">, a lista vai iniciar de V, VI, VII...
+
+Lista nao ordenada, unordered list <ul>, o parametro type significa o marcador, podendo ser: circle, disc, square.
+
+Misturando listas, exemplo:
+
+<ol>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<ol type="a">
+		<li>Item 2.1</li>
+		<li>Item 2.2</li>
+	</ol>
+	<li>Item 3</li>
+</ol>
+
+Lista de definicoes, <dl>, sao listas sem marcadores, dentro dela temos tags <dt> definition term e <dd> definition description, ambas tem fechamento opcional. Exemplo:
+
+<dl>
+	<dt>HTML</dt>
+	<dd>Linguagem de marcacao utilizada para criar conteudo de sites.</dd>
+
+	<dt>CSS</dt>
+	<dd>Linguagem de marcacao para por estilo no seu site.</dd>
+</dl>
 
 
