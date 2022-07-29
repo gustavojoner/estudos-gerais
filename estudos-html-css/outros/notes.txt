@@ -95,7 +95,7 @@ Para preencher um paragrafo com texto aleatorio basta digitar "lorem" + Enter.
 CAPITULO 8
 
 Formatacoes e tags:
-Ver arquivo formatacoes-tags.html na pasta outros.
+Ver arquivo ex011 na pasta outros.
 
 
 CAPITULO 9
@@ -229,3 +229,11 @@ Podemos utilizar a ferramenta Handbrake para mudar formatos de videos.
 
 CAPITULO 12
 CSS:
+Existem 3 tecnicas para inserirmos o design nas paginas, inline, interna e externa.
+
+Na tecnica interna a tag <style> no html deve ser colocada no <head>, diferente da inline que colocamos style em cada tap, para seguir os padroes estabelecidos, porém a melhor forma para inserirmos um style e atraves de link, ou seja, tecnica externa, com a tag <link> no head, apos a tag de titulo, como:
+
+<link rel="stylesheet" href="style.css">
+
+Para criar uma classe de estilo rapida no vscode basta digitar link e escolher css das sugestoes apresentadas, apos isso selecione Siga o link, segurando ctrl+click e criar arquivo.
+
