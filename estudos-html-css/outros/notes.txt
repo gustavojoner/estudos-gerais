@@ -163,3 +163,69 @@ Atributo para downnloads usado e download, e alguns de seus tipos sao:
 application/zip, text/html, text/css, text/javascript, video/mp4, video/H264, video/JPEG, audio/aac, audio/mpeg, font/ttf, image/jpeg, image/png, etc.
 
 <a href="arquivo/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro</a>
+
+
+CAPITULO 11
+Imagens Flexiveis:
+Imagens podem possuir tres tipos de tag, <img>, <picture>, <source>. Podemos atraves de parametros dimensionar imagens para o tamanho desejado como no exemplo para imagem grande de 1000px:
+
+<picture>
+	<source media="(max-width:1050px)" srcset="foto-M.png" type="image/png">
+	<img src="foto-G.png" alt="A imagem flexivel funciona">
+</picture>
+
+type indica o formato do arquivo, ver media types.
+scrset configura o nome da imagem que sera carregada quando o tamanho indicado for atingido.
+media serve para indicar o tamanho maximo a ser considerado para carregar a imagem
+
+Exemplo codigo que carrega Imagem Pequena, Media e Grande, dependendo do tamanho da tela:
+
+<picture>
+	<source media="(max-width:750px)" scrset="foto-P.png" type="image/png">
+	<source media="(max-width:1050px)" scrset="foto-M.png" type="image/png>
+	<img src="foto-G.png" alt="A imagem flexivel funciona">
+</picture>
+
+Audio:
+<audio preload="metadata" controls autoplay loop>
+	<source src="midia/guanabara-33.mp3" type="audio/mpeg">
+	<source src="midia/guanabara-33.ogg" type="audio/ogg">
+	<source src="midia/guanabara-33.wav" type="image/wav">
+	<p>Seu navegador nao suporta audio <a href="midia/guanabara-33.mp3" download="guanabara-33.mp3" type="audio/mpeg"></a></p>
+</audio>
+
+Atributo preload indica se o audio sera pre-carregado ou nao, tendo tres possibilidades:
+metadata 	-> carrega apenas informacoes do arquivo, tempo, autor, tamanho
+none 		-> nao vai carregar nada ate que o usuario clique play
+auto		-> (padrao) carrega o arquivo quando a pagina for aberta, mesmo que nao seja reproduzido
+
+Atributo controls apresenta o player na tela, caso nao esteja na tag audio o controle sera transparente e nao interativo.
+Atributo autoplay quando utilizado sera rodado quando a pagina for aberta.
+Atributo loop faz com que o audio seja repetido continuamente.
+
+Dentro da tag audio podemos inserir varios source, caso o primeiro falhe, passara para o proximo e caso todos falhem a mensagem sera mostrada, no exemplo com download para o audio.
+O youtube disponibiliza de uma biblioteca onde podemos buscar por efeitos sonoros e musicas sem direitos autorais.
+
+Videos:
+Os formatos mais suportados para videos em navegadores sao: MPEG, WEBM e OGG.
+
+<video width="600" poster="thumb.jpg" controls autoplay>
+	<source src="meu-video.webm" type="video/webm">
+	<source src="meu-video.mp4" type="video/mp4">
+	<source src="meu-video.ogv" type="video/ogg">
+	<p>Seu navegador consegui carregar o video</p>
+</video>
+
+Atributo width indica o tamanho do video em tela.
+Atributo poster configura a imagem de capa para o video.
+Atributo controls configura os controles de video para aparecerem na tela.
+Atributo autoplay roda o video quando a pagina e carregada.
+
+Para evitarmos custos com hospedagem de nossos videos, podemos utilizar o youtube e vimeo.
+Para incluir um video do youtube e vimeo, precisamos clicar em compartilhar e depois incorporar, que ira gerar um codigo que deve ser copiado e colado no codigo html.
+
+Para buscar videos sem direitos autorais, assim como imagens, podemos utilizar o site pexels.
+Podemos utilizar a ferramenta Handbrake para mudar formatos de videos.
+
+CAPITULO 12
+CSS:
