@@ -1,20 +1,35 @@
 @charset "UTF-8";
 
+* { /* Configuracao global para altura */   
+}
+
 body {
-    background-color: lightgoldenrodyellow;
+    background-image: linear-gradient(to bottom, white, goldenrod); /* Posso colocar a direcao em graus, ex 90deg */
+    height: 100%;
+    background-attachment: fixed; /* Mantem o fundo fixo */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #0000004d;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
 h1 {
-    color:maroon;
-    background-color: goldenrod;
+    color: goldenrod;
+    text-align: center;
+    text-shadow: 1px 1px 3px #ba89004d;
 }
 
 h2 {
-    color: darkred;
+    color: goldenrod;
 }
 
 p {
     text-align: justify;
+    text-indent: 20px;
 }

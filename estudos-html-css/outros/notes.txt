@@ -237,3 +237,93 @@ Na tecnica interna a tag <style> no html deve ser colocada no <head>, diferente 
 
 Para criar uma classe de estilo rapida no vscode basta digitar link e escolher css das sugestoes apresentadas, apos isso selecione Siga o link, segurando ctrl+click e criar arquivo.
 
+CAPITULO 13
+Cores:
+Sugestoes de aplicacao para as cores em determinados setores, segmentos:
+
+COR				ASSOCIADO A 						USADO EM 									EVITAR
+
+vermelho		amor, emocao, energia,				comida, moda, entretenimento, 				luxo, natureza, serviços
+      			raiva, perigo						servicos de emergencia, saude				em geral
+
+amarelo			felicidade, alegria, 				dar luz, calma, felicidade,					pode indicar algo barato,
+				otimismo, covardia					chamar atencao								spam
+
+laranja			divertimento, ambicao,				comercio eletronico, entretenimento,		pode se tornar cansativo
+				calor, cautela						call-to-action 								se muito explorado
+
+verde			saude, natureza, dinheiro,			relaxamento, turismo, financeiro,			luxo, tecnologia,
+				sorte, inveja						meio ambiente								meninas adolescentes
+
+azul			competencia, profissionalismo,		tecnologia, medicina, ciencias,				comida
+				sabedoria, calma, frio 				governo										
+
+roxo			criatividade, poder, sabedoria,		produtos de beleza, astrologia,				nao prende muito a 
+				misterio							espiritualidade, adolescentes				atencao, indiferente
+
+marrom			terra, robustez, estabilidade,		alimentacao, imobiliario, animais,			cor considerada conservadora
+				amizade								financas									
+
+preto 			elegancia, autoridade,				luxo, moda, marketing, cosmeticos			desconforto e medo
+				misterio, morte						
+
+branco 			pureza, limpeza, felicidade,		medicina, saude, tecnologia,				nao chama atencao sozinho,
+				seguranca							luxo										precisa ser combinado
+
+cinza			formalidade, sofisticacao,			bens de luxo, efeito calmante				sensasao de frieza
+				frieza, indiferenca					
+
+rosa 			amor, romance, sinceridade,			produtos femininos, cosmeticos				pode tornar sentimental e doce
+				cuidados							
+
+Ler sobre o Circulo Cromatico, Temperatura de cores, Monocromia;
+
+Cores complementares: sao as cores opostas no circulo, que formam o extremo contraste, uma cor primaria tem sempre uma secundaria como contraste, uma tercearia tem sempre tercearia, essas cores juntas formam cinza.
+
+Cores analogas: sao as cores diretamente ao lado, vizinhas, com baixo contraste mas extrema harmonia.
+
+Ver cores analogas + complementares, analogas relacionadas, intercaladas, triadicas, quadrado e tetradicas;
+
+Site color.adobe.com/pt para escolher combinacoes, no modo Criar + modo de cores RGB.
+(https://color.adobe.com/pt/create/color-wheel)
+(https://paletton.com)    (https://coolors.co/)
+Para obtermos transparencia, devemos adicionar mais um parametro na cor, isso pode ser feito tambem arrastando a barra de transparencia no seletor de cores do vscode, para o gradiente usamos = background-image: linear-gradient(#, #, #), pois para o css o gradiente é considerado uma imagem, sendo o primeiro parametro o angulo/inclinacao e os outros dois as cores. Existe tambem radial-gradient, e % ao lado de cores para posicao.
+
+
+CAPITULO 14
+Fontes:
+Definimos a fonte com o argumento font-family, onde o podemos dizer qual fonte sera usada primeiro e podemos inserir outras que podem ser utilizadas caso ela nao funcione, terminando geralmente com sans-serif ou serif. Exemplo:
+
+<style>
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+		color: black;
+	}
+</style>
+
+Para tamanho de fonte o recomendado e em pixels, px ou do em, EM e uma medida referencial em relacao ao tamanho da fonte original, de geralmente 16px, que equivale 1em, entao 2em seria o dobro.
+
+font-size 	-> tamanho
+font-style 	-> italico
+font-weight -> negrito
+text-align 	-> posicao do texto
+
+Pesquisar CSS safe combinations para saber quais combinacoes de familias para grupos de tipografias, site w3schools.
+Usamos @font-face em <style> para inserir/carregar uma familia baixada na pasta fonts. Colocar sempre que possivel ttf e otf, para maior compatibilidade com navegadores. Exemplo:
+
+@font-face {
+	font-family: 'Nome';
+	src: url('fonts/nome fonte.otf') format('opentype'), url('fonts/nome fonte.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+Apos, colocamos no font-family desejado. Exemplo:
+
+h1 {
+	font-family: 'Nome', Times, serif;
+	font-site: #;
+	font-weight: #;
+}
+Os tipos de arquivo fonte sao, opentype(otf), truetype(ttf), embededd-opentype, truetype-aat(Apple Advanced Typography), svg.
+Para detectar fontes partindo de imagens utilizamos o site: whatfontis.
