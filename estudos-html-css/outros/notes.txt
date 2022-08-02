@@ -97,6 +97,7 @@ CAPITULO 8
 Formatacoes e tags:
 Ver arquivo ex011 na pasta outros.
 
+ENVELOPAR PARTE DE CONTEUDO -----> CTRL + SHIFT + P, Emmet (Envolver com abreviacao (abbr))
 
 CAPITULO 9
 
@@ -327,3 +328,16 @@ h1 {
 }
 Os tipos de arquivo fonte sao, opentype(otf), truetype(ttf), embededd-opentype, truetype-aat(Apple Advanced Typography), svg.
 Para detectar fontes partindo de imagens utilizamos o site: whatfontis.
+
+
+CAPITULO 15
+Seletores Personalizados em CSS:
+Podemos identificar um determinado elemento unico atraves de id (#) ou agrupar elementos com caracteristicas semelhantes atraves de class(.)
+
+Pseudo-classe sao palavras chaves para adicionar ESTADOS especiais a elementos, utilizamos(:). Exemplos:
+:hover, :visited, :active, :checked, :empty, :focus.
+
+Pseudo-elemento sao palavras chave que permitem formatar um pedaco especifico do elemento, utilizamos(::). Exemplos:
+::before, ::after, ::first-letter, ::first-line.
+
+Toda vez que usamos o simbolo > indicamos que é um filho, ou seja, que fica dentro de outro elemento.
