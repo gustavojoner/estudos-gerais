@@ -1,1 +1,1 @@
-# arquivos referentes aos estudos de HTML, CSS e JAVASCRIPT baseados no curso em video de gustavo guanabara
+# arquivos referentes aos estudos de HTML e CSS baseados no curso em video de gustavo guanabara
