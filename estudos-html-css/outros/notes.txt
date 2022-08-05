@@ -341,3 +341,84 @@ Pseudo-elemento sao palavras chave que permitem formatar um pedaco especifico do
 ::before, ::after, ::first-letter, ::first-line.
 
 Toda vez que usamos o simbolo > indicamos que é um filho, ou seja, que fica dentro de outro elemento.
+
+
+CAPITULO 16
+Modelo de Caixas:
+Todo conteudo-content- possui uma largura -width- e uma altura -height-, chamamos de box-size, que nao inclui as medidas do padding, border, outline e margin. 
+Ao redor do box-size fica a borda, entre a borda e o conteudo temos o padding (Basicamente a margem do conteudo em relacao a borda), e da borda para fora temos o margin (Margem com base na frame ou outros elementos), entre margin e borda temos o outline (Basicamente a borda da margem). (ver exercicio 19)
+
+Modo completo x simplificado de gerar bordas e outline:
+
+border-width: 10px;
+border-style: solid;		-> border: 10px solid blue;
+border-color: blue;
+
+outline-width: 10px;
+outline-style: solid;		-> outline: 10px solid red;
+outline-color: red;
+
+Modo completo x simplificado de gerar padding e margin: (sentido horario comencando top)
+
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 20px;		-> padding: 10px 15px 20px 25px;
+padding-left: 25px;
+
+margin-top: 10px;
+margin-right: 15px;
+margin-bottom: 20px;		-> margin: 10px 15px 20px 25px;
+margin-left: 25px;
+
+Tambem existe modo de set apenas vertical e horizontal, para padding e margin:
+
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 10px;		-> padding: 10px 15px;
+padding-left: 15px;
+
+Para a margem ser centralizada automaticamente, utilizamos:
+
+margin: auto;
+
+Elementos block-level, que iniciam em nova linha: <div> <main> <section> <aside>, etc.
+Outros: addres article aside blockquote canvas dd div dl dt fieldset figcaption figure footer form h1-h6 header hr li main nav noscript ol p pre section table tfoot ul video
+
+Elementos inline-leve, que continuam na linha:
+a abbr acronym b bdo br button cite code dfn em i img input kdb label map object output q samp script select small span strong sub textarea tt var
+
+Header - areas relativas ao cabecalho
+
+Nav - define area que possui links de navegacao pela estrutura da pagina, pode estar dentro de um header
+
+Main - agrupador de conteudo principal da pagina, secoes artigos e perifericos
+
+Section - cria secoes na pagina, agrupamento tematico de conteudos
+
+Article - um elemento que vai conter um conteudo que pode ser lido de forma independente, post, noticia
+
+Aside - delimita conteudo periferico e complementar para o conteudo principal de artigo/secao
+
+Footer - rodape, secao ou artigo, conteudo que nao faz parte diretamente e nao e conteudo principal, possui informacoes sobre autoria do conteudo, links, mapas, documentos
+
+Ver exercicio 19-2 para composicao utilizando todos.
+
+Sombras:
+box-shadow: 3px 5px 4px black;
+
+3px = deslocamento horizontal, o quanto vai andar para a direita (negativo para esquerda)
+
+5px = deslocamento vertical, o quanto vai descer (negativo sobe)
+
+4px = embacamento - blur, espalhamento
+
+black = cor, podemos adicionar transparencia
+
+Bordas Arredondadas:
+Podemos por uma borda geral ou cada borda com um raio.
+border-radius: 10px;
+border-radius: 10px 30px; (cantos opostos)
+border-radius: 10px 20px 30px 40px;
+
+---fazer desafio 10---
+
