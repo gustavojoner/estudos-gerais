@@ -10,8 +10,12 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        div#container {
+            overflow-x: auto; /* gera rolagem apenas no container */
+        }
+
         table {
-            width: 400px;
+            width: 800px;
             height: 400px;
             border-collapse: collapse;
         }
@@ -35,23 +39,26 @@
 
         o fechamento de td e tr é opcional
     -->
-    <table>
-        <tr>
-            <td>A1
-            <td colspan="2">B1
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td rowspan="3">C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-        </tr>
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-        </tr>
-    </table>
+    <div id="container">
+        <table>
+            <colgroup></colgroup>
+            <tr>
+                <td>A1
+                <td colspan="2">B1
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td rowspan="3">C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
