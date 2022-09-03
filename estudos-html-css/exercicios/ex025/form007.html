@@ -8,5 +8,44 @@
 </head>
 <body>
     <h1>Formulário 7</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="est">Estado </label>
+            <select name="est" id="est" required>
+                <option value="">- - - Escolha - - -</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="lista">
+            <datalist id="lista">
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PRO">Professor</option>
+                <option value="MED">Médico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem </label> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <!-- 
+                precisa estar em post para textarea devido ao tamanho do documento suportado
+             -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
