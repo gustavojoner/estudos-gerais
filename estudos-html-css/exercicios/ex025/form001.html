@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 1</h1>
+    <!-- autocomplete para remover autopreenchimento do formulario, para enviar um formulario, é necessario ter um action e o submit que serve para enviar, para vincular um label com o input, é necessario colocar o id no for
+    metodo GET = usado para dados nao sensiveis, nome, peso, etc, maximo 3k char
+    metodo POST = usado para dados sensiveis, senhas, cartao, arquivos, etc, nao mostra na url-->
+    <form action="cadastro.php" method="post" autocomplete="off"> 
+        <p><label for="idnome">Nome:</label> 
+            <input type="text" name="nome" id="idnome">
+        </p>
+        <p><label for="idsobre">Sobrenome:</label> 
+            <input type="text" name="sobre" id="idsobre">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
