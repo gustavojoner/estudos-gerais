@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário 5</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- 
+                para radio precisamos ter o mesmo nome, para definir que é o mesmo grupo, assim podemos selecionar apenas uma escolha e alterar, podemos adicionar value para escolher o dado enviado
+                temos a opcao de colocar ja marcado, adicionando checked no imput
+             -->
+            <input type="radio" name="sex" id="fem" value="F"><label for="fem">Feminino</label> <br>
+            <input type="radio" name="sex" id="mas" value="M"><label for="mas">Masculino</label> <br>
+            <input type="radio" name="sex" id="out" value="O"><label for="out">Outro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="fut" id="fut"> <label for="fut">Futebol</label> <br>
+            <input type="checkbox" name="vol" id="vol"> <label for="vol">Vôlei</label> <br>
+            <input type="checkbox" name="bas" id="bas"> <label for="bas">Basquete</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
